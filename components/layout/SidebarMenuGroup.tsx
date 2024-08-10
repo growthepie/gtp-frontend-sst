@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { Tooltip, TooltipTrigger, TooltipContent } from "./Tooltip";
 import { MasterURL, BlockspaceURLs, ChainURLs, MetricsURLs } from "@/lib/urls";
 import { NavigationItem, navigationItems } from "@/lib/navigation";
-import { IS_PREVIEW } from "@/lib/helpers";
+import { IS_PREVIEW } from "@/lib/helpers.mjs";
 import { navigationCategories } from "@/lib/navigation";
 import rpgf from "@/icons/svg/rpgf.svg";
 import Image from "next/image";

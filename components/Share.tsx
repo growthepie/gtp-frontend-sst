@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo, useRef } from "react";
 import Icon from "@/components/layout/Icon";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { BASE_URL, IS_DEVELOPMENT, IS_PREVIEW } from "@/lib/helpers";
+import { BASE_URL, IS_DEVELOPMENT, IS_PREVIEW } from "@/lib/helpers.mjs";
 import { useMediaQuery } from "usehooks-ts";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./layout/Tooltip";
 import { EmbedData, useUIContext } from "@/contexts/UIContext";

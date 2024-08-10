@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { BASE_URLS } from "@/lib/helpers";
+import { BASE_URL } from "@/lib/helpers.mjs";
 import { useMediaQuery } from "usehooks-ts";
 
-const BASE_URL = BASE_URLS[
-  process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL?.includes("dev-fees")
-    ? "preview"
-    : "production"
-];
+// const BASE_URL = BASE_URLS[
+//   process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL?.includes("dev-fees")
+//     ? "preview"
+//     : "production"
+// ];
 
 const pathToEmbed = (pathname: string) => {
   if (pathname === "/") return `${BASE_URL}/embed/user-base`;
